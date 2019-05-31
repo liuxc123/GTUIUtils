@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'GTUIUtils_Example' do
+  pod 'GTUIUtils', :path => '../'
+
+  target 'GTUIUtils_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
