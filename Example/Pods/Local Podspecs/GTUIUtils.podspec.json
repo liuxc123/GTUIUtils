@@ -1,0 +1,65 @@
+{
+  "name": "GTUIUtils",
+  "version": "0.0.1",
+  "summary": "A collection of convenient classes for iOS.",
+  "homepage": "https://github.com/liuxc123/GTUIUtils",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "liuxc123": "lxc_work@126.com"
+  },
+  "source": {
+    "git": "https://github.com/liuxc123/GTUIUtils.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "public_header_files": "GTUIUtils/**/*.h",
+  "source_files": "GTUIUtils/GTUIUtils.h",
+  "frameworks": [
+    "UIKit",
+    "Foundation",
+    "CoreGraphics",
+    "QuartzCore"
+  ],
+  "subspecs": [
+    {
+      "name": "Tool",
+      "source_files": "GTUIUtils/Tool/*.{h,m}"
+    },
+    {
+      "name": "Foundation",
+      "dependencies": {
+        "GTUIUtils/Tool": [
+
+        ]
+      },
+      "source_files": "GTUIUtils/Foundation/*.{h,m}"
+    },
+    {
+      "name": "UIKit",
+      "dependencies": {
+        "GTUIUtils/Foundation": [
+
+        ]
+      },
+      "source_files": "GTUIUtils/UIKit/*.{h,m}"
+    },
+    {
+      "name": "Helper",
+      "dependencies": {
+        "GTUIUtils/UIKit": [
+
+        ],
+        "UITableView+FDTemplateLayoutCell": [
+          "~> 1.6"
+        ]
+      },
+      "source_files": "GTUIUtils/Helper/*.{h,m}"
+    }
+  ]
+}

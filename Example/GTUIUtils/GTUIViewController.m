@@ -7,6 +7,7 @@
 //
 
 #import "GTUIViewController.h"
+#import "GTUIUtils.h"
 
 @interface GTUIViewController ()
 
@@ -17,7 +18,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+
+    [GTUITool cameraAvailable];
 }
 
 - (void)didReceiveMemoryWarning

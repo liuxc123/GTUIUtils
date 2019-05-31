@@ -1,0 +1,6 @@
+framework module Pods_GTUIUtils_Example {
+  umbrella header "Pods-GTUIUtils_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

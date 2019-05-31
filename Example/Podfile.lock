@@ -1,0 +1,34 @@
+PODS:
+  - GTUIUtils (0.0.1):
+    - GTUIUtils/Foundation (= 0.0.1)
+    - GTUIUtils/Helper (= 0.0.1)
+    - GTUIUtils/Tool (= 0.0.1)
+    - GTUIUtils/UIKit (= 0.0.1)
+  - GTUIUtils/Foundation (0.0.1):
+    - GTUIUtils/Tool
+  - GTUIUtils/Helper (0.0.1):
+    - GTUIUtils/UIKit
+    - "UITableView+FDTemplateLayoutCell (~> 1.6)"
+  - GTUIUtils/Tool (0.0.1)
+  - GTUIUtils/UIKit (0.0.1):
+    - GTUIUtils/Foundation
+  - "UITableView+FDTemplateLayoutCell (1.6)"
+
+DEPENDENCIES:
+  - GTUIUtils (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - "UITableView+FDTemplateLayoutCell"
+
+EXTERNAL SOURCES:
+  GTUIUtils:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GTUIUtils: 4f6bbdfc32b536fd5b2c731219fae4a98ac7b6b7
+  "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
+
+PODFILE CHECKSUM: 96e20af52d2fd0e9e911e0921647fc3b48d7386c
+
+COCOAPODS: 1.6.2

@@ -41,7 +41,7 @@
 		120F0C373B5D23C2F5AAED54 /* Pods_GTUIUtils_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GTUIUtils_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C240602F4632A8D18722F9B /* Pods-GTUIUtils_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTUIUtils_Example.debug.xcconfig"; path = "Target Support Files/Pods-GTUIUtils_Example/Pods-GTUIUtils_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		29450671BDCB1F8F03877B7F /* Pods-GTUIUtils_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTUIUtils_Example.release.xcconfig"; path = "Target Support Files/Pods-GTUIUtils_Example/Pods-GTUIUtils_Example.release.xcconfig"; sourceTree = "<group>"; };
-		30E1171F9DC1A14ECD0A0492 /* GTUIUtils.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GTUIUtils.podspec; path = ../GTUIUtils.podspec; sourceTree = "<group>"; };
+		30E1171F9DC1A14ECD0A0492 /* GTUIUtils.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GTUIUtils.podspec; path = ../GTUIUtils.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* GTUIUtils_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTUIUtils_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,8 +64,8 @@
 		644F8B4369599E48E7842FA4 /* Pods_GTUIUtils_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GTUIUtils_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9E1C2C222480F7B3F61D12CB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		C567FCDBBD6BA9839E29F246 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9E1C2C222480F7B3F61D12CB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C567FCDBBD6BA9839E29F246 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C9B0F399D4EB2AA84CD4DD8D /* Pods-GTUIUtils_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTUIUtils_Tests.release.xcconfig"; path = "Target Support Files/Pods-GTUIUtils_Tests/Pods-GTUIUtils_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				02E5D6FE155802D6C1B73212 /* Pods-GTUIUtils_Tests.debug.xcconfig */,
 				C9B0F399D4EB2AA84CD4DD8D /* Pods-GTUIUtils_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -305,12 +304,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GTUIUtils_Example/Pods-GTUIUtils_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTUIUtils/GTUIUtils.framework",
+				"${BUILT_PRODUCTS_DIR}/UITableView+FDTemplateLayoutCell/UITableView_FDTemplateLayoutCell.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTUIUtils.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UITableView_FDTemplateLayoutCell.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -1,0 +1,6 @@
+framework module GTUIUtils {
+  umbrella header "GTUIUtils-umbrella.h"
+
+  export *
+  module * { export * }
+}
